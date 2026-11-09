@@ -4,24 +4,7 @@ An AI-powered customer support backend for a fictional e-commerce company (Harbo
 
 > **Principle: the model proposes, code decides.** The LLM drafts and classifies. Plain Python applies the rules and makes the final call on whether to reply or escalate.
 
-Built by following the [Datalumina "Customer support automation" guide](https://learn.datalumina.com/docs/customer-support-automation).
 
-## Status
-
-This project is built step by step. Current progress:
-
-| Stage | Status |
-|---|---|
-| Project setup (uv, settings, FastAPI health check) | Done |
-| Gmail API access (OAuth, refresh token) | Done |
-| Gmail client (list, read, label, reply) | Done |
-| Poller | Done |
-| Database (Supabase: events, tickets, messages) | To do |
-| Knowledge base | To do |
-| AI pipeline (classifier, agent, rules) | To do |
-| Evals | To do |
-| Docker deployment on a VPS | To do |
-| Admin dashboard | To do |
 
 At the moment `app/pipeline.py` is a stub: it logs the sender and subject of each new email and adds a "processed" label. It does not send replies yet.
 
